@@ -1,393 +1,246 @@
-# KimChanhyuk
-# :pushpin: goQuality
->고퀄리티 개발 컨텐츠 공유 서비스  
-> 데모사이트 링크
+# A_Eye
+<img src = ![image](https://github.com/user-attachments/assets/9afed112-6acd-4168-8e87-3c7e9774bc13)
+>
 
 </br>
 
-## 1. 제작 기간 & 참여 인원
-- 2019년 2월 18일 ~ 4월 5일
-- 개인 프로젝트
+# 1. 개요
+## 💡 프로젝트 소개
+### LLM을 이용한 제안서 자동작성 프로그램
+  - 엘리베이터 CCTV를 통해 객체를 인식하여, 연령과 성별을 분석한다.
+  - 분석된 결과를 기반으로 맞춤화된 광고를 제공한다.
+  - 광고주는 노출되기 원하는 연령과 성별을 선택하여 광고를 신청한다.
+  - 광고가 재생되는 횟수를 카운트하여 재생된 횟수만큼 결제가 가능하다.
 
 </br>
 
-## 2. 사용 기술
-#### `Back-end`
-  - Java 8
-  - Spring Boot 2.3
-  - Gradle
-  - Spring Data JPA
-  - QueryDSL
-  - H2
-  - MySQL 5.7
-  - Spring Security
-  - Jsoup
-#### `Front-end`
-  - Vue.js 3.0
-  - Element UI
+## 💡 제안배경
+- 엘리베이터 시장, 2028년까지 연평균 4.42% 성장 전망
+- 전세계 광고비 지출 규모 2023년 대비 2024년 8.2% 증가 예상
+
+- > 타겟팅 광고로 광고 효과 극대화 및 온디멘드 방식으로 사용한 만큼 결제하여 광고비 절감
+  
+</br>
+
+# 2. 사용 언어
+| 구분         | 내용               |
+|--------------|-------------------|
+| 사용 언어    | <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" /> <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white" /> <img src="https://img.shields.io/badge/CSS-239120?style=for-the-badge&logo=css3&logoColor=white" /> |
+| DB  | <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=black" />|
+| API |<img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" width="90"> <img src="https://github.com/KIMGUUNI/A_EyeF/assets/142488051/cf812fad-134d-4308-8f9a-b4c73dc10640" width="90"> <img src="https://github.com/KIMGUUNI/A_EyeF/assets/142488051/4df68764-35cb-4886-8d90-f105eb4ccf13" width="90">|
+| BACK-END  |  <img src="https://blog.kakaocdn.net/dn/bpMn1w/btqEbuwPNvX/VNyzW4QFj1NGoCuQB3EwG0/img.jpg" height="30">|
+| storage   | <img src="https://techrecipe.co.kr/wp-content/uploads/2020/08/200824_Google-Drive_001.jpg" width="100">  |
+| 라이브러리| <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTc1aov4a4ONcOBVIXydQjhh5intGt6j8yz5D9vdHe4p-gJAth-jzTUsaMS9cyMpQy66Q&usqp=CAU" width="80">  |
+| WebServer    | <img src="https://images.velog.io/images/dbfudgudals/post/2ec0586e-1d62-475d-85c4-0f78b9d2fc34/image.png" width="100">    |
+| IDE   | <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" /> |
 
 </br>
 
-## 3. ERD 설계
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/final_erd.png)
-![](https://github.com/JungHyung2/gitio.io/blob/master/assets/images/portfolio/p1.jpg)
+# 3. ERD 
+<img src = "https://github.com/KIMGUUNI/A_EyeF/assets/142488051/d002a731-40eb-4bec-9337-c2773b836a6a" width="100%" height="100%">
 
+</br>
 
-## 4. 핵심 기능
-이 서비스의 핵심 기능은 컨텐츠 등록 기능입니다.  
-사용자는 단지 컨텐츠의 카테고리를 선택하고, URL만 입력하면 끝입니다.  
-이 단순한 기능의 흐름을 보면, 서비스가 어떻게 동작하는지 알 수 있습니다.  
+# 4. 시스템 아키텍처 
+<img src = "https://github.com/KIMGUUNI/A_EyeF/assets/118683437/25ef6622-a5e7-499e-8194-a85fb37de62d" width="100%" height="100%">
+
+</br>
+
+# 5. 시스템 흐름도 
+<img src = "https://github.com/KIMGUUNI/A_EyeF/assets/118683437/cf6d6b0c-e1b0-4fe7-8c0f-80bb4685b7fc" width="100%" height="100%">
+
+</br>
+
+# 6. 기능
 
 <details>
-<summary><b>핵심 기능 설명 펼치기</b></summary>
-<div markdown="1">
 
-### 4.1. 전체 흐름
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow1.png)
+<summary>기능 보기</summary>
 
-### 4.2. 사용자 요청
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_vue.png)
+## 6.1 Security
+![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/236167f1-2452-4775-bf4b-b063490f5811)
 
-- **URL 정규식 체크** :pushpin: [코드 확인](https://github.com/Integerous/goQuality/blob/b587bbff4dce02e3bec4f4787151a9b6fa326319/frontend/src/components/PostInput.vue#L67)
-  - Vue.js로 렌더링된 화면단에서, 사용자가 등록을 시도한 URL의 모양새를 정규식으로 확인합니다.
-  - URL의 모양새가 아닌 경우, 에러 메세지를 띄웁니다.
+- JWT를 통해 페이지 권한 부여한다.
+- 비밀번호를 암호화 한다.
 
-- **Axios 비동기 요청** :pushpin: [코드 확인]()
-  - URL의 모양새인 경우, 컨텐츠를 등록하는 POST 요청을 비동기로 날립니다.
+</br>
 
-### 4.3. Controller
+## 6.2 객체 인식
 
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_controller.png)
-
-- **요청 처리** :pushpin: [코드 확인](https://github.com/JungHyung2/gitio.io/blob/d35d29b64c0e8b9653862bdcc1e6b997d2436ec9/index.html#L57C1-L57C202)
-  - Controller에서는 요청을 화면단에서 넘어온 요청을 받고, Service 계층에 로직 처리를 위임합니다.
-
-- **결과 응답** :pushpin: [코드 확인]()
-  - Service 계층에서 넘어온 로직 처리 결과(메세지)를 화면단에 응답해줍니다.
-
-### 4.4. Service
-
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_service1.png)
-
-- **Http 프로토콜 추가 및 trim()** :pushpin: [코드 확인]()
-  - 사용자가 URL 입력 시 Http 프로토콜을 생략하거나 공백을 넣은 경우,  
-  올바른 URL이 될 수 있도록 Http 프로토콜을 추가해주고, 공백을 제거해줍니다.
-
-- **URL 접속 확인** :pushpin: [코드 확인]()
-  - 화면단에서 모양새만 확인한 URL이 실제 리소스로 연결되는지 HttpUrlConnection으로 테스트합니다.
-  - 이 때, 빠른 응답을 위해 Request Method를 GET이 아닌 HEAD를 사용했습니다.
-  - (HEAD 메소드는 GET 메소드의 응답 결과의 Body는 가져오지 않고, Header만 확인하기 때문에 GET 메소드에 비해 응답속도가 빠릅니다.)
-
-  ![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_service2.png)
-
-- **Jsoup 이미지, 제목 파싱** :pushpin: [코드 확인]()
-  - URL 접속 확인결과 유효하면 Jsoup을 사용해서 입력된 URL의 이미지와 제목을 파싱합니다.
-  - 이미지는 Open Graphic Tag를 우선적으로 파싱하고, 없을 경우 첫 번째 이미지와 제목을 파싱합니다.
-  - 컨텐츠에 이미지가 없을 경우, 미리 설정해둔 기본 이미지를 사용하고, 제목이 없을 경우 생략합니다.
+![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/35f870a4-92a9-4826-a4b3-ee89c3f1721b)
 
 
-### 4.5. Repository
+- YOLOv8을 통해 객체의 얼굴을 인식한다.
+- CNN기반의 모델을 통해 나이와 성별을 예측한다.
+- 예측된 값을 SQS Message Body에 담아 전송한다.
 
-![](https://zuminternet.github.io/images/portal/post/2019-04-22-ZUM-Pilot-integer/flow_repo.png)
+</br>
 
-- **컨텐츠 저장** :pushpin: [코드 확인]()
-  - URL 유효성 체크와 이미지, 제목 파싱이 끝난 컨텐츠는 DB에 저장합니다.
-  - 저장된 컨텐츠는 다시 Repository - Service - Controller를 거쳐 화면단에 송출됩니다.
+## 6.3 광고 송출
 
-</div>
+![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/ff2119fd-ec08-46d3-accf-dda6792282e1)
+![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/baf10eb0-9b1a-4bd8-ab9c-5b837b131dc7)
+
+
+
+  - Message로 Lambda 함수 트리거가 작동한다.
+  - S3 객체 URL 반환 후 API Gateway WebSocket으로 실시간으로 영상이 송출된다.
+
+</br>
+
+## 6.4 광고 신청
+![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/a45c5e19-6983-4967-8d83-52d0f6b00479)
+
+
+
+  - 사용자는 원하는 타겟의 성별과 연령을 선택한다.
+  - 선택 후 광고 파일을 업로드한다.
+  - 광고 신청 버튼을 클릭하면 데이터베이스 및 S3에 정보가 저장된다.
+
+</br>
+
+## 6.5 광고 승인
+
+![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/08cb2c11-c304-4a9b-be74-b9fa29640e87)
+
+  - 광고 승인 대기 목록들이 보여진다.
+  - 광고 승인 시, 기존 S3 URL 파일을 복사하여 새로운 폴더에 저장되고 기존의 파일은 삭제된다.
+
+
+</br>
+
+## 6.6 대시보드
+
+![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/a4b672bb-3706-4d58-ae6c-86527aa44961)
+  
+  - 클릭된 광고의 정보를 확인할 수 있다.
+  - 클릭된 광고의 노출 횟수와 광고 타겟 정보가 대시보드로 보여진다.
+
+</br>
+
+## 6.7 광고 결제
+
+![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/8547053a-4efc-4f9e-9e1f-a770c049d704)
+
+
+  - 신청한 광고의 현재 재생 횟수에 따른 결제 금액이 보여진다.
+  - 결제를 원하는 광고를 선택하여 결제 가능하다.
+  - 간편 결제가 가능하다. (카카오페이,삼성페이 등)
+
+</br>
+
+## 6.8 문의글 답변 및 삭제
+
+![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/20c8f44e-0cf9-45d6-a8dd-5c8a1dc61890)
+
+  - 사용자는 문의글 작성이 가능하다.
+  - 관리자는 모든 문의 내용 열람, 답변 및 삭제가 가능하다.
+
+</br>
+
+## 6.9 반응형 웹
+
+![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/20b82c41-1e28-4d95-9618-e1d76044d502)
+
+  - 화면 크기에 따라 최적화되는 반응형 웹 페이지를 구현했다.
+
 </details>
 
-</br>
-
-## 5. 핵심 트러블 슈팅
-### 5.1. 컨텐츠 필터와 페이징 처리 문제
-- 저는 이 서비스가 페이스북이나 인스타그램 처럼 가볍게, 자주 사용되길 바라는 마음으로 개발했습니다.  
-때문에 페이징 처리도 무한 스크롤을 적용했습니다.
-
-- 하지만 [무한스크롤, 페이징 혹은 “더보기” 버튼? 어떤 걸 써야할까](https://cyberx.tistory.com/82) 라는 글을 읽고 무한 스크롤의 단점들을 알게 되었고,  
-다양한 기준(카테고리, 사용자, 등록일, 인기도)의 게시물 필터 기능을 넣어서 이를 보완하고자 했습니다.
-
-- 그런데 게시물이 필터링 된 상태에서 무한 스크롤이 동작하면,  
-필터링 된 게시물들만 DB에 요청해야 하기 때문에 아래의 **기존 코드** 처럼 각 필터별로 다른 Query를 날려야 했습니다.
+# 7. 트러블 슈팅
+### 📍 토큰 관리 문제
 
 <details>
-<summary><b>기존 코드</b></summary>
-<div markdown="1">
+<summary><b> 자세히 보기</b></summary>
+  
+#### 문제 상황
+  - 리프레시 토큰을 DB에 저장 시, 만료된 토큰이 DB에 계속 쌓이는 문제 발생
+
+#### 해결 시도
+  - DB 스케줄러를 이용하여 주기적으로 삭제하려 했으나, 권한 부여의 어려움 발생
+
+#### 해결 방안
+  - 스프링 스케줄러를 활용, 만료된 토큰을 삭제하여 해결
 
 ~~~java
-/**
- * 게시물 Top10 (기준: 댓글 수 + 좋아요 수)
- * @return 인기순 상위 10개 게시물
- */
-public Page<PostResponseDto> listTopTen() {
 
-    PageRequest pageRequest = PageRequest.of(0, 10, Sort.Direction.DESC, "rankPoint", "likeCnt");
-    return postRepository.findAll(pageRequest).map(PostResponseDto::new);
-}
+@Scheduled(fixeRate=604800000)
 
-/**
- * 게시물 필터 (Tag Name)
- * @param tagName 게시물 박스에서 클릭한 태그 이름
- * @param pageable 페이징 처리를 위한 객체
- * @return 해당 태그가 포함된 게시물 목록
- */
-public Page<PostResponseDto> listFilteredByTagName(String tagName, Pageable pageable) {
-
-    return postRepository.findAllByTagName(tagName, pageable).map(PostResponseDto::new);
-}
-
-// ... 게시물 필터 (Member) 생략 
-
-/**
- * 게시물 필터 (Date)
- * @param createdDate 게시물 박스에서 클릭한 날짜
- * @return 해당 날짜에 등록된 게시물 목록
- */
-public List<PostResponseDto> listFilteredByDate(String createdDate) {
-
-    // 등록일 00시부터 24시까지
-    LocalDateTime start = LocalDateTime.of(LocalDate.parse(createdDate), LocalTime.MIN);
-    LocalDateTime end = LocalDateTime.of(LocalDate.parse(createdDate), LocalTime.MAX);
-
-    return postRepository
-                    .findAllByCreatedAtBetween(start, end)
-                    .stream()
-                    .map(PostResponseDto::new)
-                    .collect(Collectors.toList());
-    }
 ~~~
 
-</div>
-</details>
 
-- 이 때 카테고리(tag)로 게시물을 필터링 하는 경우,  
-각 게시물은 최대 3개까지의 카테고리(tag)를 가질 수 있어 해당 카테고리를 포함하는 모든 게시물을 질의해야 했기 때문에  
-- 아래 **개선된 코드**와 같이 QueryDSL을 사용하여 다소 복잡한 Query를 작성하면서도 페이징 처리를 할 수 있었습니다.
-
-<details>
-<summary><b>개선된 코드</b></summary>
-<div markdown="1">
-
-~~~java
-/**
- * 게시물 필터 (Tag Name)
- */
-@Override
-public Page<Post> findAllByTagName(String tagName, Pageable pageable) {
-
-    QueryResults<Post> results = queryFactory
-            .selectFrom(post)
-            .innerJoin(postTag)
-                .on(post.idx.eq(postTag.post.idx))
-            .innerJoin(tag)
-                .on(tag.idx.eq(postTag.tag.idx))
-            .where(tag.name.eq(tagName))
-            .orderBy(post.idx.desc())
-                .limit(pageable.getPageSize())
-                .offset(pageable.getOffset())
-            .fetchResults();
-
-    return new PageImpl<>(results.getResults(), pageable, results.getTotal());
-}
-~~~
-
-</div>
 </details>
 
 </br>
 
-## 6. 그 외 트러블 슈팅
+### 📍 웹 소켓 통신 모니터링 및 로깅문제
+
 <details>
-<summary>npm run dev 실행 오류</summary>
-<div markdown="1">
+<summary><b> 자세히 보기</b></summary>
 
-- Webpack-dev-server 버전을 3.0.0으로 다운그레이드로 해결
-- `$ npm install —save-dev webpack-dev-server@3.0.0`
+#### 문제 상황
+  - 람다함수 안에서 웹 소켓 사용 시, Cloud Watch 에서 모니터링 및 로깅 확인 불가능
 
-</div>
+#### 해결 시도
+  - 웹 소켓을 사용하려 했으나, 직접 라이브러리를 다운받아 압축하여 함수 안에 집어 넣어야 하는 번거로움이 발생
+
+#### 해결 방안
+  - API Gateway Websocket을 사용 >> Cloud Watch 에서 모니터링 및 로깅 확인 가능
+
+
 </details>
 
-<details>
-<summary>vue-devtools 크롬익스텐션 인식 오류 문제</summary>
-<div markdown="1">
-  
-  - main.js 파일에 `Vue.config.devtools = true` 추가로 해결
-  - [https://github.com/vuejs/vue-devtools/issues/190](https://github.com/vuejs/vue-devtools/issues/190)
-  
-</div>
-</details>
-
-<details>
-<summary>ElementUI input 박스에서 `v-on:keyup.enter="메소드명"`이 정상 작동 안하는 문제</summary>
-<div markdown="1">
-  
-  - `v-on:keyup.enter.native=""` 와 같이 .native 추가로 해결
-  
-</div>
-</details>
-
-<details>
-<summary> Post 목록 출력시에 Member 객체 출력 에러 </summary>
-<div markdown="1">
-  
-  - 에러 메세지(500에러)
-    - No serializer found for class org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationConfig.SerializationFeature.FAIL_ON_EMPTY_BEANS)
-  - 해결
-    - Post 엔티티에 @ManyToOne 연관관계 매핑을 LAZY 옵션에서 기본(EAGER)옵션으로 수정
-  
-</div>
-</details>
-    
-<details>
-<summary> 프로젝트를 git init으로 생성 후 발생하는 npm run dev/build 오류 문제 </summary>
-<div markdown="1">
-  
-  ```jsx
-    $ npm run dev
-    npm ERR! path C:\Users\integer\IdeaProjects\pilot\package.json
-    npm ERR! code ENOENT
-    npm ERR! errno -4058
-    npm ERR! syscall open
-    npm ERR! enoent ENOENT: no such file or directory, open 'C:\Users\integer\IdeaProjects\pilot\package.json'
-    npm ERR! enoent This is related to npm not being able to find a file.
-    npm ERR! enoent
-
-    npm ERR! A complete log of this run can be found in:
-    npm ERR!     C:\Users\integer\AppData\Roaming\npm-cache\_logs\2019-02-25T01_23_19_131Z-debug.log
-  ```
-  
-  - 단순히 npm run dev/build 명령을 입력한 경로가 문제였다.
-   
-</div>
-</details>    
-
-<details>
-<summary> 태그 선택후 등록하기 누를 때 `object references an unsaved transient instance - save the transient instance before flushing` 오류</summary>
-<div markdown="1">
-  
-  - Post 엔티티의 @ManyToMany에 영속성 전이(cascade=CascadeType.ALL) 추가
-    - JPA에서 Entity를 저장할 때 연관된 모든 Entity는 영속상태여야 한다.
-    - CascadeType.PERSIST 옵션으로 부모와 자식 Enitity를 한 번에 영속화할 수 있다.
-    - 참고
-        - [https://stackoverflow.com/questions/2302802/object-references-an-unsaved-transient-instance-save-the-transient-instance-be/10680218](https://stackoverflow.com/questions/2302802/object-references-an-unsaved-transient-instance-save-the-transient-instance-be/10680218)
-   
-</div>
-</details>    
-
-<details>
-<summary> JSON: Infinite recursion (StackOverflowError)</summary>
-<div markdown="1">
-  
-  - @JsonIgnoreProperties 사용으로 해결
-    - 참고
-        - [http://springquay.blogspot.com/2016/01/new-approach-to-solve-json-recursive.html](http://springquay.blogspot.com/2016/01/new-approach-to-solve-json-recursive.html)
-        - [https://stackoverflow.com/questions/3325387/infinite-recursion-with-jackson-json-and-hibernate-jpa-issue](https://stackoverflow.com/questions/3325387/infinite-recursion-with-jackson-json-and-hibernate-jpa-issue)
-        
-</div>
-</details>  
-    
-<details>
-<summary> H2 접속문제</summary>
-<div markdown="1">
-  
-  - H2의 JDBC URL이 jdbc:h2:~/test 으로 되어있으면 jdbc:h2:mem:testdb 으로 변경해서 접속해야 한다.
-        
-</div>
-</details> 
-    
-<details>
-<summary> 컨텐츠수정 모달창에서 태그 셀렉트박스 드랍다운이 뒤쪽에 보이는 문제</summary>
-<div markdown="1">
-  
-   - ElementUI의 Global Config에 옵션 추가하면 해결
-     - main.js 파일에 `Vue.us(ElementUI, { zIndex: 9999 });` 옵션 추가(9999 이하면 안됌)
-   - 참고
-     - [https://element.eleme.io/#/en-US/component/quickstart#global-config](https://element.eleme.io/#/en-US/component/quickstart#global-config)
-        
-</div>
-</details> 
-
-<details>
-<summary> HTTP delete Request시 개발자도구의 XHR(XMLHttpRequest )에서 delete요청이 2번씩 찍히는 이유</summary>
-<div markdown="1">
-  
-  - When you try to send a XMLHttpRequest to a different domain than the page is hosted, you are violating the same-origin policy. However, this situation became somewhat common, many technics are introduced. CORS is one of them.
-
-        In short, server that you are sending the DELETE request allows cross domain requests. In the process, there should be a **preflight** call and that is the **HTTP OPTION** call.
-
-        So, you are having two responses for the **OPTION** and **DELETE** call.
-
-        see [MDN page for CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS).
-
-    - 출처 : [https://stackoverflow.com/questions/35808655/why-do-i-get-back-2-responses-of-200-and-204-when-using-an-ajax-call-to-delete-o](https://stackoverflow.com/questions/35808655/why-do-i-get-back-2-responses-of-200-and-204-when-using-an-ajax-call-to-delete-o)
-        
-</div>
-</details> 
-
-<details>
-<summary> 이미지 파싱 시 og:image 경로가 달라서 제대로 파싱이 안되는 경우</summary>
-<div markdown="1">
-  
-  - UserAgent 설정으로 해결
-        - [https://www.javacodeexamples.com/jsoup-set-user-agent-example/760](https://github.com/2023-SMHRD-IS-CLOUD-1/YOU-I/blob/f580631f545a09c3f06cff7a13d9a3efb177c4b5/YOU%26I/src/main/webapp/assets/js/map.js#L9C1-L9C16)
-        - [http://www.useragentstring.com/](http://www.useragentstring.com/)
-        
-</div>
-</details> 
-    
-<details>
-<summary> 구글 로그인으로 로그인한 사용자의 정보를 가져오는 방법이 스프링 2.0대 버전에서 달라진 것</summary>
-<div markdown="1">
-  
-  - 1.5대 버전에서는 Controller의 인자로 Principal을 넘기면 principal.getName(0에서 바로 꺼내서 쓸 수 있었는데, 2.0대 버전에서는 principal.getName()의 경우 principal 객체.toString()을 반환한다.
-    - 1.5대 버전에서 principal을 사용하는 경우
-    - 아래와 같이 사용했다면,
-
-    ```jsx
-    @RequestMapping("/sso/user")
-    @SuppressWarnings("unchecked")
-    public Map<String, String> user(Principal principal) {
-        if (principal != null) {
-            OAuth2Authentication oAuth2Authentication = (OAuth2Authentication) principal;
-            Authentication authentication = oAuth2Authentication.getUserAuthentication();
-            Map<String, String> details = new LinkedHashMap<>();
-            details = (Map<String, String>) authentication.getDetails();
-            logger.info("details = " + details);  // id, email, name, link etc.
-            Map<String, String> map = new LinkedHashMap<>();
-            map.put("email", details.get("email"));
-            return map;
-        }
-        return null;
-    }
-    ```
-
-    - 2.0대 버전에서는
-    - 아래와 같이 principal 객체의 내용을 꺼내 쓸 수 있다.
-
-    ```jsx
-    UsernamePasswordAuthenticationToken token =
-                    (UsernamePasswordAuthenticationToken) SecurityContextHolder
-                            .getContext().getAuthentication();
-            Map<String, Object> map = (Map<String, Object>) token.getPrincipal();
-
-            String email = String.valueOf(map.get("email"));
-            post.setMember(memberRepository.findByEmail(email));
-    ```
-        
-</div>
-</details> 
-    
-<details>
-<summary> 랭킹 동점자 처리 문제</summary>
-<div markdown="1">
-  
-  - PageRequest의 Sort부분에서 properties를 "rankPoint"를 주고 "likeCnt"를 줘서 댓글수보다 좋아요수가 우선순위 갖도록 설정.
-  - 좋아요 수도 똑같다면..........
-        
-</div>
-</details> 
-    
 </br>
 
-## 6. 회고 / 느낀점
->프로젝트 개발 회고 글: https://zuminternet.github.io/ZUM-Pilot-integer/
+# 8. 개발 기간 및 작업관리
+## 개발 기간
+> - 전체 개발 기간 : 2024-02-01 ~ 2024-02-27
+
+</br>
+
+ ## 작업관리
+> - GitHub를 사용하여 프로젝트 협업을 진행하였습니다.
+> - 매일 프로젝트를 진행하기 전 작업 순서와 방향성에 대해 회의를 하고 새롭게 배운 내용을 공유하는 시간을 가졌습니다.
+
+</br>
+
+# 9. 팀원소개
+
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/459cea7a-7324-4e4c-8783-6157db8847f6" width="140" height="180" /></td>
+    <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/278b105e-c98e-4238-a8b3-0a6a54cd0908" width="140" height="180" /></td>
+    <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/bc2b30e0-8924-4194-8a75-a6c959398132" width="140" height="180" /></td>
+    <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/90e2da19-10cb-4fd2-a11f-fed623fa2eb7" width="140" height="180" /></td>
+    <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/92c07452-b00e-4914-b8ed-4d5562c68609" width="140" height="180" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>김건휘</strong></td>
+    <td align="center"><strong>김찬혁</strong></td>
+    <td align="center"><strong>조원제</strong></td>
+    <td align="center"><strong>임혜지</strong></td>
+    <td align="center"><strong>박형찬</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Project Manager</b></td>
+    <td align="center"><b>Backend</b></td>
+    <td align="center"><b>Backend</b></td>
+    <td align="center"><b>Modeling</b></td>
+    <td align="center"><b>Frontend</b></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/KIMGUUNI" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/chanhyuckkim" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/jaewon07" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/Limmaji" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/phc1235" target='_blank'>github</a></td>
+  </tr>
+</table>
+
+</br>
+
+# 10. API 
+날씨 https://openweathermap.org/
+
+뉴스 https://newsapi.org/
+
+결제 https://portone.io/
