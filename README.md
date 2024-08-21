@@ -74,159 +74,87 @@
 
 </br>
 
-## 6.4 광고 신청
-![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/a45c5e19-6983-4967-8d83-52d0f6b00479)
+## 3.4 채팅 (제안서에 대한 질문)
+![image](https://github.com/user-attachments/assets/03417fe0-828b-4bb3-aa5d-131970fca39f)
 
 
 
-  - 사용자는 원하는 타겟의 성별과 연령을 선택한다.
-  - 선택 후 광고 파일을 업로드한다.
-  - 광고 신청 버튼을 클릭하면 데이터베이스 및 S3에 정보가 저장된다.
 
-</br>
-
-## 6.5 광고 승인
-
-![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/08cb2c11-c304-4a9b-be74-b9fa29640e87)
-
-  - 광고 승인 대기 목록들이 보여진다.
-  - 광고 승인 시, 기존 S3 URL 파일을 복사하여 새로운 폴더에 저장되고 기존의 파일은 삭제된다.
-
+  - 카드섹션에 대한 응답을 확인한다.
+  - 응답 내용중 그 섹션에 대해서만으로 질문이 가능하다.
 
 </br>
 
-## 6.6 대시보드
+## 3.5 채팅 (작성된 제안서 수정)
 
-![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/a4b672bb-3706-4d58-ae6c-86527aa44961)
-  
-  - 클릭된 광고의 정보를 확인할 수 있다.
-  - 클릭된 광고의 노출 횟수와 광고 타겟 정보가 대시보드로 보여진다.
-
-</br>
-
-## 6.7 광고 결제
-
-![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/8547053a-4efc-4f9e-9e1f-a770c049d704)
+![image](https://github.com/user-attachments/assets/e0d7b2da-d481-4638-89f0-1e385de7e02c)
 
 
-  - 신청한 광고의 현재 재생 횟수에 따른 결제 금액이 보여진다.
-  - 결제를 원하는 광고를 선택하여 결제 가능하다.
-  - 간편 결제가 가능하다. (카카오페이,삼성페이 등)
+  - 이미 작성되었던 제안서가 마음에 들지않으면 다시 작성해달라고 할 수 있다.
 
-</br>
-
-## 6.8 문의글 답변 및 삭제
-
-![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/20c8f44e-0cf9-45d6-a8dd-5c8a1dc61890)
-
-  - 사용자는 문의글 작성이 가능하다.
-  - 관리자는 모든 문의 내용 열람, 답변 및 삭제가 가능하다.
-
-</br>
-
-## 6.9 반응형 웹
-
-![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/20b82c41-1e28-4d95-9618-e1d76044d502)
-
-  - 화면 크기에 따라 최적화되는 반응형 웹 페이지를 구현했다.
 
 </details>
 
-# 7. 트러블 슈팅
-### 📍 토큰 관리 문제
+# 4. 트러블 슈팅
+### 📍 모델 문제
 
 <details>
 <summary><b> 자세히 보기</b></summary>
   
 #### 문제 상황
-  - 리프레시 토큰을 DB에 저장 시, 만료된 토큰이 DB에 계속 쌓이는 문제 발생
+  - 오픈소스 모델(Llama3) 의 응답이 느리고 기대에 미치지 못함.
 
 #### 해결 시도
-  - DB 스케줄러를 이용하여 주기적으로 삭제하려 했으나, 권한 부여의 어려움 발생
+  - 모델 파인튜닝, 퓨샷 학습, 벡터데이터베이스 RAG 등 다양한 에이전트를 붙혀놔도 성능이 썩 좋지않았다.
 
 #### 해결 방안
-  - 스프링 스케줄러를 활용, 만료된 토큰을 삭제하여 해결
-
-~~~java
-
-@Scheduled(fixeRate=604800000)
-
-~~~
-
+  - 클로드 API 사용
 
 </details>
 
 </br>
 
-### 📍 웹 소켓 통신 모니터링 및 로깅문제
+### 📍 모델 파인튜닝 및 GGUF 파일 변환
 
 <details>
 <summary><b> 자세히 보기</b></summary>
 
 #### 문제 상황
-  - 람다함수 안에서 웹 소켓 사용 시, Cloud Watch 에서 모니터링 및 로깅 확인 불가능
+  - LLM 모델들이 대부분 용량이 어마어마해서 파인튜닝 시 GPU가 터짐. 
 
 #### 해결 시도
-  - 웹 소켓을 사용하려 했으나, 직접 라이브러리를 다운받아 압축하여 함수 안에 집어 넣어야 하는 번거로움이 발생
+  - unsloth 사용 -> unsloth를 사용할 수 있는 모델들이 정해져있어서 내가 사용하는 모델에는 적용 불가
+  - 모델 양자화 -> 양자화와 LoRA를 사용해 학습후 GGUF 변환 하기전 양자화 하기전 모델과 병합후 GGUF파일변환 후 다시 양자화 
 
 #### 해결 방안
-  - API Gateway Websocket을 사용 >> Cloud Watch 에서 모니터링 및 로깅 확인 가능
+  - 모델 양자화 -> 양자화와 LoRA를 사용해 학습후 GGUF 변환 하기전 양자화 하기전 모델과 병합후 GGUF파일변환 후 다시 양자화 
 
 
 </details>
 
 </br>
 
-# 8. 개발 기간 및 작업관리
+# 5. 개발 기간 및 작업관리
 ## 개발 기간
-> - 전체 개발 기간 : 2024-02-01 ~ 2024-02-27
+> - 전체 개발 기간 : 2024-07-16 ~ 2024-08-21
 
-</br>
-
- ## 작업관리
-> - GitHub를 사용하여 프로젝트 협업을 진행하였습니다.
-> - 매일 프로젝트를 진행하기 전 작업 순서와 방향성에 대해 회의를 하고 새롭게 배운 내용을 공유하는 시간을 가졌습니다.
-
-</br>
-
-# 9. 팀원소개
+# 6. 팀원소개
 
 <table>
   <tr>
-    <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/459cea7a-7324-4e4c-8783-6157db8847f6" width="140" height="180" /></td>
     <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/278b105e-c98e-4238-a8b3-0a6a54cd0908" width="140" height="180" /></td>
-    <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/bc2b30e0-8924-4194-8a75-a6c959398132" width="140" height="180" /></td>
-    <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/90e2da19-10cb-4fd2-a11f-fed623fa2eb7" width="140" height="180" /></td>
-    <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/92c07452-b00e-4914-b8ed-4d5562c68609" width="140" height="180" /></td>
+
   </tr>
   <tr>
-    <td align="center"><strong>김건휘</strong></td>
     <td align="center"><strong>김찬혁</strong></td>
-    <td align="center"><strong>조원제</strong></td>
-    <td align="center"><strong>임혜지</strong></td>
-    <td align="center"><strong>박형찬</strong></td>
   </tr>
   <tr>
-    <td align="center"><b>Project Manager</b></td>
-    <td align="center"><b>Backend</b></td>
-    <td align="center"><b>Backend</b></td>
-    <td align="center"><b>Modeling</b></td>
-    <td align="center"><b>Frontend</b></td>
+    <td align="center"><b>개인프로젝트</b></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/KIMGUUNI" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/chanhyuckkim" target='_blank'>github</a></td>
-    <td align="center"><a href="https://github.com/jaewon07" target='_blank'>github</a></td>
-    <td align="center"><a href="https://github.com/Limmaji" target='_blank'>github</a></td>
-    <td align="center"><a href="https://github.com/phc1235" target='_blank'>github</a></td>
   </tr>
 </table>
 
 </br>
 
-# 10. API 
-날씨 https://openweathermap.org/
-
-뉴스 https://newsapi.org/
-
-결제 https://portone.io/
