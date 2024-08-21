@@ -25,15 +25,14 @@
 # 2. 사용 언어
 | 구분         | 내용               |
 |--------------|-------------------|
-| 사용 언어    | <img src="https://img.shields.io/badge/Python-F80000?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white" /> <img src="https://img.shields.io/badge/CSS-239120?style=for-the-badge&logo=css3&logoColor=white" /> |
+| 사용 언어    | <img src="https://img.shields.io/badge/Python-F80000?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />|
 | DB  | <img src="https://img.shields.io/badge/Chroma-F80000?style=for-the-badge&logo=chroma&logoColor=black" />|
-| API |<img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" width="90"> <img src="https://github.com/KIMGUUNI/A_EyeF/assets/142488051/cf812fad-134d-4308-8f9a-b4c73dc10640" width="90"> <img src="https://github.com/KIMGUUNI/A_EyeF/assets/142488051/4df68764-35cb-4886-8d90-f105eb4ccf13" width="90">|
+| API |![image](https://github.com/user-attachments/assets/1d019b72-a680-46db-9a93-4c8ce99ff338)![image](https://github.com/user-attachments/assets/49900c24-368e-41f1-98fd-fa86924a8706)
 | BACK-END  |  <img src="https://blog.kakaocdn.net/dn/bpMn1w/btqEbuwPNvX/VNyzW4QFj1NGoCuQB3EwG0/img.jpg" height="30">|
-| storage   | <img src="https://techrecipe.co.kr/wp-content/uploads/2020/08/200824_Google-Drive_001.jpg" width="100">  |
-| 라이브러리| ![image](https://github.com/user-attachments/assets/2c480a08-4b8c-4bfc-8ca4-839fa7014d80)
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTc1aov4a4ONcOBVIXydQjhh5intGt6j8yz5D9vdHe4p-gJAth-jzTUsaMS9cyMpQy66Q&usqp=CAU" width="80">  |
-| WebServer    | <img src="https://images.velog.io/images/dbfudgudals/post/2ec0586e-1d62-475d-85c4-0f78b9d2fc34/image.png" width="100">    |
-| IDE   | <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" /> |
+| storage   | <img src="https://techrecipe.co.kr/wp-content/uploads/2020/08/200824_Google-Drive_001.jpg" width="100">|
+| 라이브러리| ![image](https://github.com/user-attachments/assets/2c480a08-4b8c-4bfc-8ca4-839fa7014d80) ![image](https://github.com/user-attachments/assets/28c337d6-69cc-458f-89fe-093a1bd92037)|
+| WebServer    | <img src="https://images.velog.io/images/dbfudgudals/post/2ec0586e-1d62-475d-85c4-0f78b9d2fc34/image.png" width="100">|
+| IDE   | <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" />|
 
 </br>
 
