@@ -25,14 +25,14 @@
 # 2. 사용 언어
 | 구분         | 내용               |
 |--------------|-------------------|
-| 사용 언어    | <img src="https://img.shields.io/badge/Python-F80000?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />|
+| 사용 언어    | <img src="https://img.shields.io/badge/Python-F80000?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=black" /><img src="https://img.shields.io/badge/Javascript-239120?style=for-the-badge&logo=Javascript&logoColor=white" /><img src="https://img.shields.io/badge/CSS3-239120?style=for-the-badge&logo=CSS3&logoColor=white" />|
 | DB  | <img src="https://img.shields.io/badge/Chroma-F80000?style=for-the-badge&logo=chroma&logoColor=black" />|
 | API |![image](https://github.com/user-attachments/assets/1d019b72-a680-46db-9a93-4c8ce99ff338)![image](https://github.com/user-attachments/assets/49900c24-368e-41f1-98fd-fa86924a8706)
 | BACK-END  |  <img src="https://img.shields.io/badge/Python-F80000?style=for-the-badge&logo=python&logoColor=white">|
 | storage   | <img src="https://techrecipe.co.kr/wp-content/uploads/2020/08/200824_Google-Drive_001.jpg" width="100">|
 | 라이브러리| ![image](https://github.com/user-attachments/assets/2c480a08-4b8c-4bfc-8ca4-839fa7014d80) ![image](https://github.com/user-attachments/assets/28c337d6-69cc-458f-89fe-093a1bd92037)|
 | IDE   | ![image](https://github.com/user-attachments/assets/768ad5f8-acb4-4361-86a8-cb760f0fcd92)
-|
+
 
 </br>
 
