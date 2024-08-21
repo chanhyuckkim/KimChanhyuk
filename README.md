@@ -1,4 +1,4 @@
-# A_Eye
+# LLM을 이용한 제안서 자동 작성 프로그램
 ![image](https://github.com/user-attachments/assets/9afed112-6acd-4168-8e87-3c7e9774bc13)
 >
 
