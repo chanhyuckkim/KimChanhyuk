@@ -28,63 +28,49 @@
 | 사용 언어    | <img src="https://img.shields.io/badge/Python-F80000?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />|
 | DB  | <img src="https://img.shields.io/badge/Chroma-F80000?style=for-the-badge&logo=chroma&logoColor=black" />|
 | API |![image](https://github.com/user-attachments/assets/1d019b72-a680-46db-9a93-4c8ce99ff338)![image](https://github.com/user-attachments/assets/49900c24-368e-41f1-98fd-fa86924a8706)
-| BACK-END  |  <img src="https://blog.kakaocdn.net/dn/bpMn1w/btqEbuwPNvX/VNyzW4QFj1NGoCuQB3EwG0/img.jpg" height="30">|
+| BACK-END  |  <img src="https://img.shields.io/badge/Python-F80000?style=for-the-badge&logo=python&logoColor=white">|
 | storage   | <img src="https://techrecipe.co.kr/wp-content/uploads/2020/08/200824_Google-Drive_001.jpg" width="100">|
 | 라이브러리| ![image](https://github.com/user-attachments/assets/2c480a08-4b8c-4bfc-8ca4-839fa7014d80) ![image](https://github.com/user-attachments/assets/28c337d6-69cc-458f-89fe-093a1bd92037)|
-| WebServer    | <img src="https://images.velog.io/images/dbfudgudals/post/2ec0586e-1d62-475d-85c4-0f78b9d2fc34/image.png" width="100">|
-| IDE   | <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" />|
+| IDE   | ![image](https://github.com/user-attachments/assets/768ad5f8-acb4-4361-86a8-cb760f0fcd92)
+|
 
 </br>
 
-# 3. ERD 
-<img src = "https://github.com/KIMGUUNI/A_EyeF/assets/142488051/d002a731-40eb-4bec-9337-c2773b836a6a" width="100%" height="100%">
+# 3. 기능
+
+
+
+## 3.1 목차생성
+![image](https://github.com/user-attachments/assets/1a8b6d95-3992-4652-ab87-27336c9426da)
+
+
+- Pdf 파일을 업로드한다.
+- 제안요청서에 제시된 제안서 총매수와 사업목적등의 섹션을 파싱하여 LLM이 목차를 생성한다.
 
 </br>
 
-# 4. 시스템 아키텍처 
-<img src = "https://github.com/KIMGUUNI/A_EyeF/assets/118683437/25ef6622-a5e7-499e-8194-a85fb37de62d" width="100%" height="100%">
+## 3.2 목차 재생성
+
+![image](https://github.com/user-attachments/assets/78b439f8-f12d-4bef-b158-90fce9f77b6e)
+![image](https://github.com/user-attachments/assets/399634bf-24ae-4840-ba79-f97b38040b57)
+![image](https://github.com/user-attachments/assets/fc9d30d9-4245-4588-9601-cdbb90d24c36)
+
+
+
+- 생성된 목차를 기반으로 사용자가 개입하여 목차를 수정할 수 있다.
+- 목차가 맘에 들면 목차 확정 버튼을 누른다.
+
 
 </br>
 
-# 5. 시스템 흐름도 
-<img src = "https://github.com/KIMGUUNI/A_EyeF/assets/118683437/cf6d6b0c-e1b0-4fe7-8c0f-80bb4685b7fc" width="100%" height="100%">
+## 3.3 제안서 작성
 
-</br>
-
-# 6. 기능
-
-<details>
-
-<summary>기능 보기</summary>
-
-## 6.1 Security
-![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/236167f1-2452-4775-bf4b-b063490f5811)
-
-- JWT를 통해 페이지 권한 부여한다.
-- 비밀번호를 암호화 한다.
-
-</br>
-
-## 6.2 객체 인식
-
-![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/35f870a4-92a9-4826-a4b3-ee89c3f1721b)
-
-
-- YOLOv8을 통해 객체의 얼굴을 인식한다.
-- CNN기반의 모델을 통해 나이와 성별을 예측한다.
-- 예측된 값을 SQS Message Body에 담아 전송한다.
-
-</br>
-
-## 6.3 광고 송출
-
-![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/ff2119fd-ec08-46d3-accf-dda6792282e1)
-![image](https://github.com/KIMGUUNI/A_EyeF/assets/118683437/baf10eb0-9b1a-4bd8-ab9c-5b837b131dc7)
+![image](https://github.com/user-attachments/assets/7bd6fb77-1b4c-42c0-bce6-138ea3a040a0)
 
 
 
-  - Message로 Lambda 함수 트리거가 작동한다.
-  - S3 객체 URL 반환 후 API Gateway WebSocket으로 실시간으로 영상이 송출된다.
+  - 목차 확정을 누르면 소주제를 기반으로한 카드 섹션들이 소주제 갯수대로 생성된다.
+  - 각 하나의 카드 섹션마다 소주제에 맞는 알맞은 응답이 Stream형식으로 생성된다.
 
 </br>
 
