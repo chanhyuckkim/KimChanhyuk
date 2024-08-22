@@ -65,32 +65,41 @@
 
 ## 3.3 제안서 작성
 
-![image](https://github.com/user-attachments/assets/7bd6fb77-1b4c-42c0-bce6-138ea3a040a0)
+![image](https://github.com/user-attachments/assets/e25bac54-1881-483c-8834-5de6c71e201b)
+![image](https://github.com/user-attachments/assets/13bf1680-1ca4-4f34-bda2-3dbe3fc26108)
+
+
 
 
 
   - 목차 확정을 누르면 소주제를 기반으로한 카드 섹션들이 소주제 갯수대로 생성된다.
   - 각 하나의 카드 섹션마다 소주제에 맞는 알맞은 응답이 Stream형식으로 생성된다.
+  - 카드를 클릭하면 크게 볼 수 있다.
 
 </br>
 
 ## 3.4 채팅 (제안서에 대한 질문)
 ![image](https://github.com/user-attachments/assets/03417fe0-828b-4bb3-aa5d-131970fca39f)
+![image](https://github.com/user-attachments/assets/6e8d7617-3bb5-4d87-a5e5-a050bc842168)
 
 
 
 
   - 카드섹션에 대한 응답을 확인한다.
   - 응답 내용중 그 섹션에 대해서만으로 질문이 가능하다.
+  - 카드를 클릭하면 크게 볼 수 있다.
 
 </br>
 
 ## 3.5 채팅 (작성된 제안서 수정)
 
-![image](https://github.com/user-attachments/assets/e0d7b2da-d481-4638-89f0-1e385de7e02c)
+![image](https://github.com/user-attachments/assets/4c7dd65c-2377-4e3a-8db4-00301d36f958)
+![image](https://github.com/user-attachments/assets/4c7ffc0c-681a-4a18-aff9-b33bad22e973)
+
 
 
   - 이미 작성되었던 제안서가 마음에 들지않으면 다시 작성해달라고 할 수 있다.
+  - 상세하게 설명해줄 수록 LLM의 응답 효율이 늘어난다.
 
 
 </details>
