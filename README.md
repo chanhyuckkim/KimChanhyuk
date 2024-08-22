@@ -55,6 +55,8 @@
 ![image](https://github.com/user-attachments/assets/c25ee17e-0a57-4e3e-a387-be49347d711e)
 
 
+- 목차가 생성된뒤 목차 구성 이유를 선택하고 목차 재생성 버튼을 누르면 구체적으로 왜 이런 목차를 작성했는지 알려준다.
+
 
 
 </br>
