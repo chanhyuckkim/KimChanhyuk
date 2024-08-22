@@ -49,6 +49,17 @@
 
 </br>
 
+
+## 3-1-1 목차구성 상세설명(목차를 왜 이렇게 구성했는지?)
+![image](https://github.com/user-attachments/assets/46d587f4-800d-426d-b4dd-73cb0310885b)
+![image](https://github.com/user-attachments/assets/c25ee17e-0a57-4e3e-a387-be49347d711e)
+
+
+
+
+</br>
+
+
 ## 3.2 목차 재생성
 
 ![image](https://github.com/user-attachments/assets/78b439f8-f12d-4bef-b158-90fce9f77b6e)
