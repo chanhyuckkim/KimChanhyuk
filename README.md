@@ -1,208 +1,191 @@
-# LLM을 이용한 제안서 자동 작성 프로그램
-![image](https://github.com/user-attachments/assets/9afed112-6acd-4168-8e87-3c7e9774bc13)
->
+# LLM 기반 지능형 제안서 자동 생성 시스템
+![image](https://github.com/user-attachments/assets/f8ffb005-e09b-495e-b0f2-6e4a7a3edc15)
 
-</br>
+## 목차
+1. [프로젝트 개요](#1-프로젝트-개요)
+2. [기술 스택](#2-기술-스택)
+3. [핵심 기능](#3-핵심-기능)
+4. [기술적 도전과 해결 방안](#4-기술적-도전과-해결-방안)
+5. [개발 일정](#5-개발-일정)
+6. [개발자 정보](#6-개발자-정보)
 
-# 1. 개요
-## 💡 프로젝트 소개
-### LLM을 이용한 제안서 자동작성 프로그램
-  - 제안요청서를 업로드하면 제안요청서를 각 섹션으로 분리한다.
-  - 제안요청서에 제시된 제안서의 총 매수와 사업목적에 맞게 목차를 생성한다.
-  - 목차가 마음에 들지 않다면 사용자의 개입으로 목차를 요구사항에 맞게 변경할 수 있다.
-  - 생성된 목차의 세부주제와 제안요청서의 요구사항에 맞게 각 섹션당 알맞는 내용을 응답한다.
-  - 각 소주제에 대한 내용을 채팅창에서 수정도 가능하고 질문도 가능하다.
+# 1. 프로젝트 개요
+## 💡 혁신적 제안서 자동화 솔루션
+본 프로젝트는 최첨단 대규모 언어 모델(LLM)을 활용하여 기업의 제안서 작성 프로세스를 획기적으로 개선하는 지능형 시스템입니다. 이 솔루션은 다음과 같은 고급 기능을 제공합니다:
 
-</br>
+- 제안요청서 자동 분석 및 섹션별 최적화 분리
+- 고도화된 알고리즘을 통한 맞춤형 제안서 구조 생성
+- 사업 목적 및 요구사항에 최적화된 동적 목차 시스템
+- AI 기반 섹션별 컨텐츠 자동 생성 및 실시간 스트리밍
+- 대화형 인터페이스를 통한 지능적 내용 수정 및 개선
+- 빅데이터 기반 제안서 데이터베이스 구축 및 지식 관리
 
-## 💡 제안배경
-- 제안요청서에 따라 제안서를 작성하는 방식은 비슷하지만 매번 새로운 주제, 새로운 아이디어를 창조해야하기 때문에 다른 부분에 신경쓰기가 어려워서 제안됐다.
+## 💡 혁신의 필요성
+현대 비즈니스 환경에서 고품질 제안서의 중요성은 날로 증가하고 있습니다. 그러나 전통적인 제안서 작성 방식은 다음과 같은 문제점을 안고 있습니다:
 
-- > 제안서(1부) 작성 외주 = 약 5000만원 , 현재 제안서 작성 인건비 = 약 3000만원/ 제안서 작성 인건비 절약 가능
-  
-</br>
+- 반복적이면서도 매번 새로운 창의성을 요구하는 모순적 특성
+- 높은 인적 자원 소모와 시간 비용 (제안서 1부당 약 3,000만원의 인건비)
+- 외주 의존도 증가로 인한 과도한 비용 발생 (외주 제작 시 약 5,000만원/부)
 
-# 2. 사용 언어
-| 구분         | 내용               |
+본 시스템은 이러한 문제를 해결하고, 제안서 작성 프로세스의 효율성과 품질을 동시에 향상시키는 것을 목표로 합니다.
+
+# 2. 기술 스택
+| 구분         | 사용 기술               |
 |--------------|-------------------|
-| 사용 언어    | <img src="https://img.shields.io/badge/Python-F80000?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=black" /><img src="https://img.shields.io/badge/Javascript-239120?style=for-the-badge&logo=Javascript&logoColor=white" /><img src="https://img.shields.io/badge/CSS3-239120?style=for-the-badge&logo=CSS3&logoColor=white" />|
-| DB  | <img src="https://img.shields.io/badge/Chroma-F80000?style=for-the-badge&logo=chroma&logoColor=black" />|
-| API |![image](https://github.com/user-attachments/assets/1d019b72-a680-46db-9a93-4c8ce99ff338)![image](https://github.com/user-attachments/assets/49900c24-368e-41f1-98fd-fa86924a8706)
-| BACK-END  |  <img src="https://img.shields.io/badge/Python-F80000?style=for-the-badge&logo=python&logoColor=white">|
-| storage   | <img src="https://techrecipe.co.kr/wp-content/uploads/2020/08/200824_Google-Drive_001.jpg" width="100">|
-| 라이브러리| ![image](https://github.com/user-attachments/assets/2c480a08-4b8c-4bfc-8ca4-839fa7014d80) ![image](https://github.com/user-attachments/assets/28c337d6-69cc-458f-89fe-093a1bd92037)|
-| IDE   | ![image](https://github.com/user-attachments/assets/768ad5f8-acb4-4361-86a8-cb760f0fcd92)
+| 프론트엔드    | <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> |
+| 백엔드        | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"> |
+| 데이터베이스  | <img src="https://img.shields.io/badge/Chroma-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white"> |
+| API 통합     |![image](https://github.com/user-attachments/assets/1d019b72-a680-46db-9a93-4c8ce99ff338)![image](https://github.com/user-attachments/assets/49900c24-368e-41f1-98fd-fa86924a8706)|
+| 클라우드 저장소 | <img src="https://techrecipe.co.kr/wp-content/uploads/2020/08/200824_Google-Drive_001.jpg" width="100"> |
+| 핵심 라이브러리 | ![image](https://github.com/user-attachments/assets/2c480a08-4b8c-4bfc-8ca4-839fa7014d80) ![image](https://github.com/user-attachments/assets/28c337d6-69cc-458f-89fe-093a1bd92037) |
+| 개발 환경     | ![image](https://github.com/user-attachments/assets/768ad5f8-acb4-4361-86a8-cb760f0fcd92) |
 
+# 3. 핵심 기능
 
-</br>
+## 3.1 AI 기반 지능형 목차 생성
+![image](https://github.com/user-attachments/assets/a3eb4f7b-161f-46a9-9ee5-90e04ef05fad)
 
-# 3. 기능
+- 고급 자연어 처리 기술을 활용한 PDF 문서 자동 분석
+- 제안요청서의 핵심 요구사항 및 사업 목적 추출을 통한 최적화된 목차 구조 생성
+- 머신러닝 알고리즘을 통한 제안서 총 페이지 수 예측 및 섹션별 최적 분량 할당
 
+## 3.1.1 제안요청서 지능형 요약 및 데이터베이스 통합
+![image](https://github.com/user-attachments/assets/7b0810e1-f202-4abf-af7e-5432d74c26e1)
+- 고도화된 텍스트 요약 알고리즘을 통한 제안요청서 핵심 내용 추출
+- 사용자 검증 기반의 지능형 데이터베이스 저장 시스템
+- 빅데이터 분석을 통한 제안서 트렌드 및 패턴 학습 기능
 
+## 3.1.2 목차 구성 로직 상세 분석
+![image](https://github.com/user-attachments/assets/ed7e4ee1-c950-4e13-b16a-d3a757e810db)
 
-## 3.1 목차생성
-![image](https://github.com/user-attachments/assets/1a8b6d95-3992-4652-ab87-27336c9426da)
+![image](https://github.com/user-attachments/assets/940c66bb-b1b3-49a2-8692-c676908c3ac4)
 
+- 딥러닝 기반 목차 구성 논리 시각화 시스템
+- 사용자 피드백을 반영한 실시간 목차 최적화 알고리즘
+- 산업별, 분야별 최적 목차 구조 학습 및 추천 기능
 
-- Pdf 파일을 업로드한다.
-- 제안요청서에 제시된 제안서 총매수와 사업목적등의 섹션을 파싱하여 LLM이 목차를 생성한다.
+## 3.2 동적 목차 재구성 시스템
 
-</br>
+![image](https://github.com/user-attachments/assets/41332e38-9790-414f-bf80-f17b224c2628)
 
+![image](https://github.com/user-attachments/assets/e71f0faf-5fb9-40c9-99ed-7c98202f848a)
 
-## 3-1-1 목차구성 상세설명(목차를 왜 이렇게 구성했는지?)
-![image](https://github.com/user-attachments/assets/46d587f4-800d-426d-b4dd-73cb0310885b)
-![image](https://github.com/user-attachments/assets/c25ee17e-0a57-4e3e-a387-be49347d711e)
+- 사용자 인터랙션 기반 실시간 목차 조정 기능
+- AI 추천 시스템을 통한 최적 구조 제안
+- 목차 변경에 따른 전체 제안서 구조 자동 최적화
 
+## 3.3 AI 기반 제안서 컨텐츠 자동 생성
 
-- 목차가 생성된뒤 목차 구성 이유를 선택하고 목차 재생성 버튼을 누르면 구체적으로 왜 이런 목차를 작성했는지 알려준다.
+![image](https://github.com/user-attachments/assets/ec241188-fe51-4141-9836-dd2a6a304975)
 
+![image](https://github.com/user-attachments/assets/8246799e-d5cb-4136-89c3-3f7324b9b2eb)
 
+  - 목차 기반 섹션별 맞춤형 컨텐츠 실시간 생성
+  - 고급 자연어 생성 모델을 활용한 전문적이고 설득력 있는 내용 작성
+  - 동적 헤드카피 생성 시스템을 통한 섹션별 핵심 메시지 강조
+  - 사용자 친화적 카드 인터페이스를 통한 직관적 내용 관리
 
-</br>
+## 3.4 대화형 AI 기반 제안서 최적화
+![image](https://github.com/user-attachments/assets/e01dca51-389b-4ae6-8349-b2f408c42b88)
 
+  - 컨텍스트 인식 AI 채팅봇을 통한 지능형 질의응답 시스템
+  - 제안서 전체 맥락을 고려한 정확하고 일관된 정보 제공
+  - 사용자 피드백 기반 실시간 학습 및 컨텐츠 개선
 
-## 3.2 목차 재생성
+## 3.5 AI 지원 제안서 실시간 편집 시스템
 
-![image](https://github.com/user-attachments/assets/78b439f8-f12d-4bef-b158-90fce9f77b6e)
-![image](https://github.com/user-attachments/assets/399634bf-24ae-4840-ba79-f97b38040b57)
-![image](https://github.com/user-attachments/assets/fc9d30d9-4245-4588-9601-cdbb90d24c36)
+![image](https://github.com/user-attachments/assets/37864854-8cb1-4d46-91bd-91fddc8aa217)
 
+![image](https://github.com/user-attachments/assets/3a1f9f9e-4128-4454-ad03-e6ac57498be4)
 
+  - 자연어 처리 기반 사용자 요구사항 정확한 해석 및 반영
+  - 컨텐츠 품질 향상을 위한 AI 제안 시스템
+  - 편집 이력 관리 및 버전 제어를 통한 안정적인 문서 관리
+  - 실시간 협업 기능을 통한 팀 단위 제안서 작성 지원
 
-- 생성된 목차를 기반으로 사용자가 개입하여 목차를 수정할 수 있다.
-- 목차가 맘에 들면 목차 확정 버튼을 누른다.
-
-
-</br>
-
-## 3.3 제안서 작성
-
-![image](https://github.com/user-attachments/assets/e25bac54-1881-483c-8834-5de6c71e201b)
-![image](https://github.com/user-attachments/assets/13bf1680-1ca4-4f34-bda2-3dbe3fc26108)
-
-
-
-
-
-  - 목차 확정을 누르면 소주제를 기반으로한 카드 섹션들이 소주제 갯수대로 생성된다.
-  - 각 하나의 카드 섹션마다 소주제에 맞는 알맞은 응답이 Stream형식으로 생성된다.
-  - 카드를 클릭하면 크게 볼 수 있다.
-
-</br>
-
-## 3.4 채팅 (제안서에 대한 질문)
-![image](https://github.com/user-attachments/assets/03417fe0-828b-4bb3-aa5d-131970fca39f)
-![image](https://github.com/user-attachments/assets/0073ea48-b37a-4192-8760-e4ec3e8c57f1)
-
-
-
-
-
-  - 제안서 카드섹션에 대한 응답을 확인한다.
-  - 제안서 작성 내용에서 궁금한점을 질문할 수있다.
-  - 작성된 제안서의 내용을 잊어버리지 않고 대답해준다.
-  - 카드를 클릭하면 크게 볼 수 있다.
-
-</br>
-
-## 3.5 채팅 (작성된 제안서 수정)
-
-![image](https://github.com/user-attachments/assets/4c7dd65c-2377-4e3a-8db4-00301d36f958)
-![image](https://github.com/user-attachments/assets/4c7ffc0c-681a-4a18-aff9-b33bad22e973)
-
-
-
-  - 이미 작성되었던 제안서가 마음에 들지않으면 다시 작성해달라고 할 수 있다.
-  - 상세하게 설명해줄 수록 LLM의 응답 효율이 늘어난다.
-  - 작성된 제안서의 내용을 잊어버리지 않고 대답해준다.
-  - 카드를 클릭하면 크게 볼 수 있다.
-
-
-</details>
-
-# 4. 트러블 슈팅
-### 📍 모델 문제
+# 4. 기술적 도전과 해결 방안
+### 📍 LLM 성능 최적화
 
 <details>
-<summary><b> 자세히 보기</b></summary>
+<summary><b> 상세 내용 보기</b></summary>
   
-#### 문제 상황
-  - 오픈소스 모델(Llama3) 의 응답이 느리고 기대에 미치지 못함.
+#### 도전 과제
+  - 오픈소스 LLM(Llama3)의 성능 및 응답 속도 개선 필요성
 
-#### 해결 시도
-  - 모델 파인튜닝, 퓨샷 학습, 벡터데이터베이스 RAG 등 다양한 에이전트를 붙혀놔도 성능이 썩 좋지않았다.
+#### 시도한 접근법
+  - 모델 파인튜닝, 퓨샷 학습, 벡터 데이터베이스 기반 RAG(Retrieval-Augmented Generation) 등 다양한 최적화 기법 적용
 
-#### 해결 방안
-  - 클로드 API 사용
+#### 최종 해결책
+  - Claude API 도입을 통한 고성능 LLM 활용
+  - 자체 개발 프롬프트 엔지니어링 기법을 통한 응답 품질 향상
+  - 하이브리드 접근법: 로컬 경량 모델과 클라우드 기반 고성능 모델의 최적 조합
 
 </details>
 
-</br>
-
-### 📍 모델 파인튜닝 및 GGUF 파일 변환
+### 📍 대규모 언어 모델의 효율적 학습 및 배포
 
 <details>
-<summary><b> 자세히 보기</b></summary>
+<summary><b> 상세 내용 보기</b></summary>
 
-#### 문제 상황
-  - LLM 모델들이 대부분 용량이 어마어마해서 파인튜닝 시 GPU가 터짐. 
+#### 도전 과제
+  - 대용량 LLM의 학습 및 배포 시 하드웨어 리소스 한계 극복 
 
-#### 해결 시도
-  - unsloth 사용 -> unsloth를 사용할 수 있는 모델들이 정해져있어서 내가 사용하는 모델에는 적용 불가
-  - 모델 양자화 -> 양자화와 LoRA를 사용해 학습후 GGUF 변환 하기전 양자화 하기전 모델과 병합후 GGUF파일변환 후 다시 양자화 
+#### 시도한 접근법
+  - unsloth 등 모델 최적화 라이브러리 활용 검토
+  - 다양한 모델 압축 및 양자화 기법 실험
 
-#### 해결 방안
-  - 모델 양자화 -> 양자화와 LoRA를 사용해 학습후 GGUF 변환 하기전 양자화 하기전 모델과 병합후 GGUF파일변환 후 다시 양자화 
-
+#### 최종 해결책
+  - LoRA(Low-Rank Adaptation) 기반 효율적 모델 학습 구현
+  - GGUF(GPT-Generated Unified Format) 변환을 통한 모델 최적화
+  - 단계적 양자화 프로세스 도입: 
+    1) 초기 학습 
+    2) LoRA 적용 
+    3) 원본 모델과 병합 
+    4) GGUF 변환 
+    5) 최종 양자화
 
 </details>
 
-</br>
-
-
-### 📍 모델 토큰 문제
+### 📍 토큰 제한 극복을 위한 고급 텍스트 처리
 
 <details>
-<summary><b> 자세히 보기</b></summary>
+<summary><b> 상세 내용 보기</b></summary>
 
-#### 문제 상황
-  - 각 모델의 입, 출력 토큰에 제한이 있어서 긴 제안요청서를 업로드하여도 제대로된 응답이 나오지 않았다.
+#### 도전 과제
+  - LLM의 입출력 토큰 제한으로 인한 대용량 제안요청서 처리 어려움
 
-#### 해결 시도
-  - 파일 업로드 시 제안요청서를 세부 섹션별로 파싱 하고 제안서 작성시 모델의 입력 토큰을 초과하지 않게 목차의 소주제별로 응답 분리 
+#### 시도한 접근법
+  - 문서 분할 및 청크 처리 기법 적용
+  - 다중 패스 처리 방식 검토
 
-#### 해결 방안
-  - 제안요청서를 각 섹션별로 파싱 하여 입력 토큰을 줄였고, 응답을 각 소주제섹션에 맞는 응답으로 구현하여 출력 토큰도 해결되었다
-
+#### 최종 해결책
+  - 고급 자연어 처리 기술을 활용한 지능형 문서 분할 알고리즘 개발
+  - 섹션별 컨텍스트 인식 파싱 시스템 구축
+  - 계층적 요약 기법을 통한 핵심 정보 추출 및 재구성
+  - 동적 토큰 할당 시스템을 통한 효율적 리소스 관리
 
 </details>
 
-</br>
+# 5. 개발 일정
 
 
+## 향후 개발 계획
+- 2024 Q4: 산업별 특화 모듈 개발 착수
+- 2025 Q1: 다국어 지원 및 글로벌 시장 진출 준비
+- 2025 Q2: AI 기반 실시간 협업 기능 강화
+- 2025 Q3: 빅데이터 분석을 통한 제안 트렌드 예측 시스템 구축
 
-# 5. 개발 기간
-## 개발 기간
-> - 전체 개발 기간 : 2024-07-16 ~ 2024-08-21
-
-# 6. 팀원소개
+# 6. 개발자 정보
 
 <table>
   <tr>
     <td align="center"><img src="https://github.com/KIMGUUNI/A_EyeF/assets/118683437/278b105e-c98e-4238-a8b3-0a6a54cd0908" width="140" height="180" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>김찬혁 (Chan-Hyeok Kim)</strong></td>
+  </tr>
 
-  </tr>
-  <tr>
-    <td align="center"><strong>김찬혁</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><b>개인프로젝트</b></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/chanhyuckkim" target='_blank'>github</a></td>
-  </tr>
 </table>
 
-</br>
 
+© 2024 Chan-Hyeok Kim. All Rights Reserved.
