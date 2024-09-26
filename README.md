@@ -187,6 +187,3 @@
   </tr>
 
 </table>
-
-
-© 2024 Chan-Hyeok Kim. All Rights Reserved.
