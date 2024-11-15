@@ -18,7 +18,9 @@
 - 사업 목적 및 요구사항에 최적화된 동적 목차 시스템
 - AI 기반 섹션별 컨텐츠 자동 생성 및 실시간 스트리밍
 - 대화형 인터페이스를 통한 지능적 내용 수정 및 개선
-- 빅데이터 기반 제안서 데이터베이스 구축 및 지식 관리
+-  실시간 웹소켓 기반 공동 작업
+- AI 기반 이미지 생성 및 통합
+
 
 ## 💡 혁신의 필요성
 현대 비즈니스 환경에서 고품질 제안서의 중요성은 날로 증가하고 있습니다. 그러나 전통적인 제안서 작성 방식은 다음과 같은 문제점을 안고 있습니다:
@@ -33,11 +35,11 @@
 | 구분         | 사용 기술               |
 |--------------|-------------------|
 | 프론트엔드    | <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> |
-| 백엔드        | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"> |
-| 데이터베이스  | <img src="https://img.shields.io/badge/Chroma-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white"> |
-| API 통합     |![image](https://github.com/user-attachments/assets/1d019b72-a680-46db-9a93-4c8ce99ff338)![image](https://github.com/user-attachments/assets/49900c24-368e-41f1-98fd-fa86924a8706)|
-| 클라우드 저장소 | <img src="https://techrecipe.co.kr/wp-content/uploads/2020/08/200824_Google-Drive_001.jpg" width="100"> |
-| 핵심 라이브러리 | ![image](https://github.com/user-attachments/assets/2c480a08-4b8c-4bfc-8ca4-839fa7014d80) ![image](https://github.com/user-attachments/assets/28c337d6-69cc-458f-89fe-093a1bd92037) |
+| 백엔드        | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"> <img src="https://img.shields.io/badge/SQLAlchemy-FF0000?style=for-the-badge&logo=sqlite&logoColor=white"> |
+| 데이터베이스  | <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/Chroma-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white">|
+| API 통합     |<img src="https://img.shields.io/badge/Claude-FF9900?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/Gemini-333333?style=for-the-badge&logo=google&logoColor=white"> <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">|
+| 클라우드 저장소 |<img src="https://img.shields.io/badge/AWS%20S3-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"> <img src="https://techrecipe.co.kr/wp-content/uploads/2020/08/200824_Google-Drive_001.jpg" width="100">|
+| 핵심 라이브러리 |<img src="https://img.shields.io/badge/LangChain-FF66CC?style=for-the-badge&logo=codeforces&logoColor=white"> <img src="https://img.shields.io/badge/PyMuPDF-4285F4?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/pptx-FFB6C1?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white">|
 | 개발 환경     | ![image](https://github.com/user-attachments/assets/768ad5f8-acb4-4361-86a8-cb760f0fcd92) |
 
 # 3. 핵심 기능
