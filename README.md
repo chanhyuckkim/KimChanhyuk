@@ -30,16 +30,16 @@
 - 외주 의존도 증가로 인한 과도한 비용 발생 (외주 제작 시 약 5,000만원/부)
 
 본 시스템은 이러한 문제를 해결하고, 제안서 작성 프로세스의 효율성과 품질을 동시에 향상시키는 것을 목표로 합니다.
-https://img.shields.io/badge/Stable%20Diffusion-FF6B6B?style=for-the-badge&logo=stability-ai&logoColor=white
+https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socket.io&logoColor=white
 # 2. 기술 스택
 | 구분         | 사용 기술               |
 |--------------|-------------------|
-| 프론트엔드    | <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> |
+| 프론트엔드    | <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socket.io&logoColor=white">|
 | 백엔드        | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"> <img src="https://img.shields.io/badge/SQLAlchemy-FF0000?style=for-the-badge&logo=sqlite&logoColor=white"> |
 | 데이터베이스  | <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/Chroma-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white">|
 | API 통합     |<img src="https://img.shields.io/badge/Claude-FF9900?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/Gemini-333333?style=for-the-badge&logo=google&logoColor=white"> <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/Stable%20Diffusion-FF6B6B?style=for-the-badge&logo=stability-ai&logoColor=white"> |
 | 클라우드 저장소 |<img src="https://img.shields.io/badge/AWS%20S3-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"> <img src="https://techrecipe.co.kr/wp-content/uploads/2020/08/200824_Google-Drive_001.jpg" width="100">|
-| 핵심 라이브러리 |<img src="https://img.shields.io/badge/LangChain-FF66CC?style=for-the-badge&logo=codeforces&logoColor=white"> <img src="https://img.shields.io/badge/PyMuPDF-4285F4?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/pptx-FFB6C1?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white">|
+| 핵심 라이브러리 |<img src="https://img.shields.io/badge/LangChain-FF66CC?style=for-the-badge&logo=codeforces&logoColor=white"> <img src="https://img.shields.io/badge/PyMuPDF-4285F4?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/pptx-FFB6C1?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"> <img src="https://img.shields.io/badge/BeautifulSoup-8C8C8C?style=for-the-badge&logo=python&logoColor=white">|
 | 개발 환경     | ![image](https://github.com/user-attachments/assets/768ad5f8-acb4-4361-86a8-cb760f0fcd92) |
 
 # 3. Database ERD
