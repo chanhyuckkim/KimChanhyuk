@@ -48,14 +48,14 @@
 ![image](https://github.com/user-attachments/assets/a3eb4f7b-161f-46a9-9ee5-90e04ef05fad)
 
 - 고급 자연어 처리 기술을 활용한 PDF 문서 자동 분석
-- 제안요청서의 핵심 요구사항 및 사업 목적 추출을 통한 최적화된 목차 구조 생성
-- 머신러닝 알고리즘을 통한 제안서 총 페이지 수 예측 및 섹션별 최적 분량 할당
+- 제안요청서의 핵심 요구사항 및 사업 목적 등 추출을 통한 최적화된 목차 구조 생성
+
 
 ## 3.1.1 제안요청서 지능형 요약 및 데이터베이스 통합
 ![image](https://github.com/user-attachments/assets/7b0810e1-f202-4abf-af7e-5432d74c26e1)
 - 고도화된 텍스트 요약 알고리즘을 통한 제안요청서 핵심 내용 추출
 - 사용자 검증 기반의 지능형 데이터베이스 저장 시스템
-- 빅데이터 분석을 통한 제안서 트렌드 및 패턴 학습 기능
+
 
 ## 3.1.2 목차 구성 로직 상세 분석
 ![image](https://github.com/user-attachments/assets/ed7e4ee1-c950-4e13-b16a-d3a757e810db)
